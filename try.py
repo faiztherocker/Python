@@ -3,6 +3,7 @@ import random
 import urllib
 import requests #Requesting info from webpage
 from bs4 import BeautifulSoup
+from PyDictionary import PyDictionary
 
 #print 3 ** 9;
 #tuna = 5
@@ -268,9 +269,12 @@ class MyMessenger(threading.Thread):
 message1 = MyMessenger(name='Sending messages\n')
 message2 = MyMessenger(name='Receive messages\n')
 message1.start()
-message2.start()"""
+message2.start()
 word_count= {}
 word_count['me'] = 1
 word_count['we'] = 1
-print(word_count)
+print(word_count)"""
+
+dictionary = PyDictionary()
+print(dictionary.synonym('name'))
 
