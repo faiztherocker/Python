@@ -273,8 +273,42 @@ message2.start()
 word_count= {}
 word_count['me'] = 1
 word_count['we'] = 1
-print(word_count)"""
+print(word_count)
 
 dictionary = PyDictionary()
-print(dictionary.synonym('name'))
+print(dictionary.synonym('name'))"""
+
+#Unpacking list
+#Instead of
+"""item1 = ['2nd April','Bread',34.67]
+date= item1[0]
+items = item1[1]
+
+print(date)
+print(items)
+# You can do this
+
+date, name, price = ['2nd April','Bread',34.67] #Error if number of vars are not equal to number of list ele
+print(date)
+print(name)
+
+def drop_first_last(grades):
+
+
+    first, middle, last = grades[:1],grades[1:2],grades[2:]
+    avg = sum(middle) / len(middle)
+    print(avg)
+
+drop_first_last([23,45,65,12,34,56,78,54])"""
+
+#Zip fucntions in python
+#Combines two list with equal number of elements
+first = ['faizal','tinu','manven','hey']
+last = ['vasaya','singh','rathore']
+
+names = zip(first, last)
+for a,b in names:
+        print(a, b)
+
+
 
